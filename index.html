@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codehouse</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container__nav">
+        <nav class="container__nav--nav">
+          <header>
+            <a href="https://plataforma.coderhouse.com/">
+              <img
+                class="nav__logo"
+                src="./img/coderhouse.svg"
+                alt="Logo coderhouse"
+              />
+            </a>
+          </header>
+        </nav>
+      </div>
+
+      <main class="main">
+        <div class="container__course">
+          <div class="container__course--cards" id="container__course--cards">
+            <div class="card">
+                <span class="category">${course[i].category}</span>
+                <h2 class="title">${course[i].title}</h2>
+                <p class="date">${course[i].date}</p>
+                <h3 class="price">${course[i].price}</h3>
+                <a class="btn-info" href="${course[i].url}">Inscribirse</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
